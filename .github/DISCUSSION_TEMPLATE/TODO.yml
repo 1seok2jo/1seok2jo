@@ -11,7 +11,6 @@ body:
       label: 오늘 주요 할 일
       description: "오늘 할 일은 무엇인가요?"
       placeholder: "예시) 1. TIL 작성하기\n2. 이슈 작성하기\n3. PR 보내기"
-      value: |
       render: bash
     validations:
       required: true
