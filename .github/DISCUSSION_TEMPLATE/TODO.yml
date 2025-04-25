@@ -1,0 +1,19 @@
+title: "[TODO] "
+labels: ["오늘 할 일"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        오늘 할 일을 작성합니다.
+  - type: textarea
+    id: todos
+    attributes:
+      label: 오늘 주요 할 일
+      description: "오늘 할 일은 무엇인가요?"
+      value: |
+        * [ ] 1.
+        * [ ] 2.
+        * [ ] 3.
+      render: bash
+    validations:
+      required: true
