@@ -14,13 +14,3 @@ body:
       render: bash
     validations:
       required: true
-  - type: input
-    id: username
-    attributes:
-      label: GitHub 사용자명
-      default: @{{ github.actor }}
-  - type: input
-    id: timestamp
-    attributes:
-      label: 작성 시간
-      default: {{ date }
