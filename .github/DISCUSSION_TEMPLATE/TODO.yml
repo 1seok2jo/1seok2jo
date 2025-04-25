@@ -1,4 +1,4 @@
-title: "[TODO] "
+title: "[TODO] {{ date }}"
 labels: ["오늘 할 일"]
 body:
   - type: markdown
