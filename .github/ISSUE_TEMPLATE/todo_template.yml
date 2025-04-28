@@ -1,0 +1,42 @@
+name: "📝 TODO 작업 추가"
+description: "해야 할 일을 등록할 때 사용하는 템플릿입니다."
+title: "[TODO] 작업 제목을 입력하세요"
+labels: ["todo", "작업대기중"]
+assignees: []
+
+body:
+  - type: input
+    id: task_title
+    attributes:
+      label: "✨ 작업 제목"
+      description: "간결하게 작성해주세요. 예: 로그인 페이지 UI 수정"
+      placeholder: "작업 제목을 입력하세요"
+    validations:
+      required: true
+
+  - type: textarea
+    id: task_detail
+    attributes:
+      label: "🛠 작업 내용"
+      description: "구체적으로 해야 할 작업들을 작성하세요. 세부 항목이 있다면 체크박스 형태로 정리해도 좋아요."
+      placeholder: "- [ ] DB 스키마 수정\n- [ ] API 추가 구현"
+    validations:
+      required: true
+
+  - type: input
+    id: estimated_time
+    attributes:
+      label: "⏳ 예상 소요 시간"
+      description: "예상 작업 소요 시간을 입력하세요. 예: 30분, 2시간, 1일"
+      placeholder: "예) 2시간"
+    validations:
+      required: false
+
+  - type: textarea
+    id: reference
+    attributes:
+      label: "📎 참고 자료 (Optional)"
+      description: "디자인 링크, 참고 이슈, 관련 문서 등을 남겨주세요."
+      placeholder: "예: [디자인 링크](https://...)"
+    validations:
+      required: false
